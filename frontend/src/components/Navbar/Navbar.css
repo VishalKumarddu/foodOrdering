@@ -1,0 +1,100 @@
+/* Navbar Container */
+.navbar {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+  }
+  
+  /* Centered Links */
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-weight: 500;
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links li a.active {
+    color: #ff6347; /* Active link color */
+  }
+  
+  .navbar-links li a:hover {
+    color: #ff6347; /* Accent color */
+  }
+  
+  /* Right-Side Actions */
+  .navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .icon {
+    color: #333;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .icon:hover {
+    color: #ff6347;
+  }
+  
+  .auth-btn {
+    background: none;
+    border: 1px solid #ff6347;
+    color: #ff6347;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+  }
+  
+  .auth-btn.signup {
+    background-color: #ff6347;
+    color: #fff;
+  }
+  
+  .auth-btn:hover {
+    background-color: #ff6347;
+    color: #fff;
+  }
+  
+  /* Add this to your navbar.css */
+.navbar-actions .icon {
+  position: relative;
+  font-size: 24px;
+}
+
+.cart-item-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
